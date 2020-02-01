@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^0.1.2
   getflutter: ^1.0.3
+  badges: ^1.1.0
+  webview_flutter: ^0.3.19+5
 
 dev_dependencies:
   flutter_test:
@@ -20,4 +22,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/me.jpeg
+    - assets/
+    - assets/apps/acta/
+    - assets/apps/heremycard/
+    - assets/apps/neverforget/

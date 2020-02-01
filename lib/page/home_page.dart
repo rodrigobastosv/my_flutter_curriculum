@@ -4,7 +4,7 @@ import 'package:my_flutter_curriculum/model/category.dart';
 import 'package:my_flutter_curriculum/page/profile_page.dart';
 
 import '../data.dart';
-import 'apps_list_page.dart';
+import 'app/apps_list_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
