@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:getflutter/getflutter.dart';
 import 'package:my_flutter_curriculum/model/category.dart';
-import 'package:my_flutter_curriculum/page/profile_page.dart';
+import 'package:my_flutter_curriculum/page/profile/profile_page.dart';
 
 import '../data.dart';
 import 'app/apps_list_page.dart';
+import 'medium/articles_list_page.dart';
+import 'projects/projects_list_page.dart';
+import 'pub/pub_packages_list_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -46,11 +49,11 @@ class CategoryItemTile extends StatelessWidget {
         if (category.categoryType == CategoryType.app) {
           _navigate(context, AppsListPage(category));
         } else if (category.categoryType == CategoryType.pub) {
-          _navigate(context, AppsListPage(category));
-        } else if (category.categoryType == CategoryType.pub) {
-          _navigate(context, AppsListPage(category));
+          _navigate(context, PubPackagesListPage());
+        } else if (category.categoryType == CategoryType.medium) {
+          _navigate(context, ArticlesListPage());
         } else {
-          _navigate(context, AppsListPage(category));
+          _navigate(context, ProjectsListPage());
         }
       },
       child: GFCard(

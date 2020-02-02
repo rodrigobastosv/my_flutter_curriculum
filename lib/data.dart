@@ -1,4 +1,7 @@
 import 'package:my_flutter_curriculum/model/app.dart';
+import 'package:my_flutter_curriculum/model/article.dart';
+import 'package:my_flutter_curriculum/model/project.dart';
+import 'package:my_flutter_curriculum/model/pub_package.dart';
 
 import 'model/category.dart';
 
@@ -27,7 +30,7 @@ final categories = [
     categoryType: CategoryType.medium,
   ),
   Category(
-    name: 'Repos',
+    name: 'Projects',
     description:
         'On my spare time i like to play around and make some side projects with Flutter',
     image:
@@ -95,6 +98,73 @@ final apps = [
     releaseDate: '02/02/2020',
     stuffUsed: [],
     images: [],
+  ),
+];
+
+final pubPackages = [
+  PubPackage(
+    name: 'simple_router',
+    description: 'aaaaaa',
+    url: 'https://pub.dev/packages/simple_router',
+    releaseDate: '15/10/2019',
+    rating: '44',
+  ),
+  PubPackage(
+    name: 'connectivity_alert_widget',
+    description: 'connectivity_alert_widget',
+    url: 'https://pub.dev/packages/connectivity_alert_widget',
+    releaseDate: '26/11/2019',
+    rating: '77',
+  ),
+  PubPackage(
+    name: 'search_cep',
+    description: 'search_cep',
+    url: 'https://pub.dev/packages/search_cep',
+    releaseDate: '29/11/2019',
+    rating: '83',
+  ),
+  PubPackage(
+    name: 'fancy_shimmer_image',
+    description: 'fancy_shimmer_image',
+    url: 'https://pub.dev/packages/fancy_shimmer_image',
+    releaseDate: '17/12/2019',
+    rating: '75',
+  ),
+  PubPackage(
+    name: 'shared_preferences_monitor',
+    description: 'shared_preferences_monitor',
+    url: 'https://pub.dev/packages/shared_preferences_monitor',
+    releaseDate: '01/02/2020',
+    rating: '50',
+  ),
+];
+
+final articles = [
+  Article(
+    title: 'Como resolver status de conectividade do dispositivo',
+    url:
+        'https://medium.com/@rodrigobastosv/como-resolver-status-de-conectividade-do-dispositivo-9ccaa3941d19',
+    releaseDate: '15/01/2020',
+  ),
+  Article(
+    title: 'Organize melhor seu código usando BloC',
+    url:
+        'https://medium.com/@rodrigobastosv/organize-melhor-seu-c%C3%B3digo-usando-bloc-60b3457925d8',
+    releaseDate: '27/01/2020',
+  ),
+  Article(
+    title: 'Parte 2 — Testando aplicativo usando flutter_bloc',
+    url:
+        'https://medium.com/@rodrigobastosv/parte-2-testando-aplicativo-usando-flutter-bloc-57f1601980a3',
+    releaseDate: '02/02/2020',
+  ),
+];
+
+final projects = [
+  Project(
+    name: 'Tô com fome',
+    githubUrl: 'https://github.com/rodrigobastosv/to_com_fome',
+    releaseDate: '19/11/2019',
   ),
 ];
 
